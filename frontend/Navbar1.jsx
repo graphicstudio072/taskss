@@ -2,8 +2,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import button from 'react-bootstrap/button';
 
-function Navbar1() {
+function Navbar1(props) {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -25,6 +26,8 @@ function Navbar1() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
+          <button variant="danger" onClick ={()=>props.setIsLoggedIn(false)}>Logout</button>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>

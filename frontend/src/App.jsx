@@ -39,7 +39,8 @@ const deleteComplaint=(index)=>{
   return(
     isLoggedIn ? 
     <div>
-      <Navbar1></Navbar1>
+      <Navbar1
+      setIsLoggedIn={setIsLoggedIn}></Navbar1>
       <HeroSection
       setDepartment={setDepartment}
       setDescription={setDescription}
