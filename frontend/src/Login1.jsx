@@ -10,7 +10,7 @@ function Login1(props){
 <h1>Campus Complaint </h1>
 
 
-            <div class name="login-form">   
+            <div className="login-form">   
                 <label>  Username </label>
                 <input type="text" placeholder="Username" className='form-control mb-3'></input>
                 <label>  Password </label>
