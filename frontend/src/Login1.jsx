@@ -10,7 +10,7 @@ Login1(props){
     const [isRegistering, setIsRegistering] = useState(false);
     const handleLogin = async () => {
         try {
-            const response = await axios.post('http://localhost:3000/login', { 
+            const response = await axios.post('https://devika-nmmp.onrender.com/login', { 
                 username: username,
                 password: password 
             });
@@ -24,7 +24,7 @@ Login1(props){
     };
     const handleRegister = async () => {
         try {
-            const response = await axios.post('http://localhost:3000/register', {
+            const response = await axios.post('https://devika-nmmp.onrender.com/register', {
                 username: username,
                 password: password
             });
