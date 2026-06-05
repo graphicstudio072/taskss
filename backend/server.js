@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 
-mongoose.connect("mongodb+srv://vickyy:nandhu000@cluster0.xq2msem.mongodb.net/complaintbox?appName=Cluster0")
+mongoose.connect("mongodb+srv://aboobackersiddiquesiddique072_db_user:<db_password>@cluster0.qwywvr8.mongodb.net/?appName=Cluster0")
     .then(() => console.log("☑️Connected to MongoDB!"))
     .catch(err => console.error("❌ Database connection error:", err));
 
